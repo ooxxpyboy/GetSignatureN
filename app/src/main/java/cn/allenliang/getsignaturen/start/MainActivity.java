@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements ItemOnClick {
                 list.add(installBean);
             }
         }
+
         recyclerView.setPullRefreshEnabled(false);
         recyclerView.setLoadingMoreEnabled(false);
         ListviewAdapter listviewAdapter = new ListviewAdapter(getApplicationContext(),list,onClick);
