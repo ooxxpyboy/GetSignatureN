@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".start.MainActivity">
+<com.mancj.materialsearchbar.MaterialSearchBar
+    android:id="@+id/start_activity_search_bar"
+    app:mt_hint="寻找应用"
+    style="@style/MaterialSearchBarLight"
+    app:mt_speechMode="true"
+    android:background="#FFDAB9"
+    android:visibility="visible"
+    app:mt_maxSuggestionsCount="10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</com.mancj.materialsearchbar.MaterialSearchBar>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#FFDAB9"
+        android:id="@+id/cccc_line"
+        android:layout_below="@id/start_activity_search_bar"
+        android:layout_height="2dp" />
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:id="@+id/start_xlist_view"
+        android:layout_below="@id/cccc_line"
+        android:layout_height="match_parent"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+</RelativeLayout>

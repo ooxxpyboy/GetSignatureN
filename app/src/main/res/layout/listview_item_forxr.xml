@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="5dp"
+    android:background="#ffffff"
+    android:id="@+id/list_item_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <com.shehuan.niv.NiceImageView
+        android:layout_width="50dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/list_imageview"
+        android:src="@mipmap/ic_launcher"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="应用名"
+        android:layout_marginTop="2dp"
+        android:id="@+id/list_name"
+        android:layout_marginLeft="5dp"
+       android:layout_toRightOf="@id/list_imageview"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="应用包名"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/list_package"
+        android:layout_toRightOf="@id/list_imageview"
+        android:layout_below="@id/list_name"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="MD55签名"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/list_item_sigtv"
+        android:layout_toRightOf="@id/list_imageview"
+        android:layout_below="@id/list_package"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="SHA1签名"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/list_item_sha1tv"
+        android:layout_toRightOf="@id/list_imageview"
+        android:layout_below="@id/list_item_sigtv"
+        android:layout_height="wrap_content" />
+<Button
+    android:layout_width="match_parent"
+    android:text="复制到剪切板"
+    android:layout_below="@id/list_item_sha1tv"
+    android:layout_marginTop="5dp"
+    android:id="@+id/list_item_bt"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:background="#dcdcdc"
+        android:layout_below="@+id/list_item_bt"
+        android:layout_height="1dp" />
+</RelativeLayout>
